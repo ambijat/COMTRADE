@@ -1,0 +1,11 @@
+.env
+.venv/
+comtrade_panel_output/
+__pycache__/
+*.pyc
+secrets/
+*.key
+*.env
+comtrade_panel_output/raw/
+
+reference/HSag6_partner.csv

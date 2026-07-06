@@ -1,0 +1,210 @@
+{
+  "more": false,
+  "results": [
+    {
+      "qtyCode": -1,
+      "qtyAbbr": "N/A",
+      "qtyDescription": "Not available or not specified or no quantity."
+    },
+    {
+      "qtyCode": 2,
+      "qtyAbbr": "m²",
+      "qtyDescription": "Area in square meters"
+    },
+    {
+      "qtyCode": 3,
+      "qtyAbbr": "1000 kWh",
+      "qtyDescription": "Electrical energy in thousands of kilowatt-hours"
+    },
+    {
+      "qtyCode": 4,
+      "qtyAbbr": "m",
+      "qtyDescription": "Length in meters"
+    },
+    {
+      "qtyCode": 5,
+      "qtyAbbr": "u",
+      "qtyDescription": "Number of items"
+    },
+    {
+      "qtyCode": 6,
+      "qtyAbbr": "2u",
+      "qtyDescription": "Number of pairs"
+    },
+    {
+      "qtyCode": 7,
+      "qtyAbbr": "l",
+      "qtyDescription": "Volume in liters"
+    },
+    {
+      "qtyCode": 8,
+      "qtyAbbr": "kg",
+      "qtyDescription": "Weight in kilograms"
+    },
+    {
+      "qtyCode": 9,
+      "qtyAbbr": "1000u",
+      "qtyDescription": "Thousand of items"
+    },
+    {
+      "qtyCode": 10,
+      "qtyAbbr": "U (jeu/pack)",
+      "qtyDescription": "Number of packages"
+    },
+    {
+      "qtyCode": 11,
+      "qtyAbbr": "12u",
+      "qtyDescription": "Dozen of items"
+    },
+    {
+      "qtyCode": 12,
+      "qtyAbbr": "m³",
+      "qtyDescription": "Volume in cubic meters"
+    },
+    {
+      "qtyCode": 13,
+      "qtyAbbr": "carat",
+      "qtyDescription": "Weight in carats"
+    },
+    {
+      "qtyCode": 14,
+      "qtyAbbr": "km",
+      "qtyDescription": "Length in Kilometers"
+    },
+    {
+      "qtyCode": 15,
+      "qtyAbbr": "g",
+      "qtyDescription": "Weight in grams"
+    },
+    {
+      "qtyCode": 16,
+      "qtyAbbr": "hive",
+      "qtyDescription": "Beehive"
+    },
+    {
+      "qtyCode": 17,
+      "qtyAbbr": "1000 m³",
+      "qtyDescription": "Volume in thousand cubic meters"
+    },
+    {
+      "qtyCode": 18,
+      "qtyAbbr": "TJ",
+      "qtyDescription": "Terajoule (gross calorific value)"
+    },
+    {
+      "qtyCode": 19,
+      "qtyAbbr": "BBL",
+      "qtyDescription": "Barrels"
+    },
+    {
+      "qtyCode": 20,
+      "qtyAbbr": "1000 L",
+      "qtyDescription": "Volume in thousands of liters"
+    },
+    {
+      "qtyCode": 21,
+      "qtyAbbr": "1000 KG",
+      "qtyDescription": "Weight in thousand of kilograms"
+    },
+    {
+      "qtyCode": 22,
+      "qtyAbbr": "kWH",
+      "qtyDescription": "Electrical energy in kilowatt-hours"
+    },
+    {
+      "qtyCode": 23,
+      "qtyAbbr": "l alc 100%",
+      "qtyDescription": "Litre pure (100 %) alcohol - l alc. 100%"
+    },
+    {
+      "qtyCode": 24,
+      "qtyAbbr": "head",
+      "qtyDescription": "Head"
+    },
+    {
+      "qtyCode": 25,
+      "qtyAbbr": "kg/net eda",
+      "qtyDescription": "Kilogram drained net weight"
+    },
+    {
+      "qtyCode": 26,
+      "qtyAbbr": "kg C5H14ClNO",
+      "qtyDescription": "Kilogram of choline chloride"
+    },
+    {
+      "qtyCode": 27,
+      "qtyAbbr": "kg P2O5",
+      "qtyDescription": "Kilogram of diphosphorus pentaoxide"
+    },
+    {
+      "qtyCode": 28,
+      "qtyAbbr": "kg H2O2",
+      "qtyDescription": "Kilogram of hydrogen peroxide"
+    },
+    {
+      "qtyCode": 29,
+      "qtyAbbr": "kg met.am.",
+      "qtyDescription": "Kilogram of methylamines"
+    },
+    {
+      "qtyCode": 30,
+      "qtyAbbr": "kg N",
+      "qtyDescription": "Kilogram of nitrogen"
+    },
+    {
+      "qtyCode": 31,
+      "qtyAbbr": "kg KOH",
+      "qtyDescription": "Kilogram of potassium hydroxide (caustic potash)"
+    },
+    {
+      "qtyCode": 32,
+      "qtyAbbr": "kg K2O",
+      "qtyDescription": "Kilogram of potassium oxide"
+    },
+    {
+      "qtyCode": 33,
+      "qtyAbbr": "kg NaOH",
+      "qtyDescription": "Kilogram of sodium hydroxide (caustic soda)"
+    },
+    {
+      "qtyCode": 34,
+      "qtyAbbr": "kg 90% sdt",
+      "qtyDescription": "Kilogram of substance 90 % dry"
+    },
+    {
+      "qtyCode": 35,
+      "qtyAbbr": "kg U",
+      "qtyDescription": "Kilogram of uranium"
+    },
+    {
+      "qtyCode": 36,
+      "qtyAbbr": "ct/l",
+      "qtyDescription": "Carrying capacity in tonnes"
+    },
+    {
+      "qtyCode": 37,
+      "qtyAbbr": "Bq",
+      "qtyDescription": "Becquerels"
+    },
+    {
+      "qtyCode": 38,
+      "qtyAbbr": "gi F/S",
+      "qtyDescription": "Gram of fissile isotopes"
+    },
+    {
+      "qtyCode": 39,
+      "qtyAbbr": "GRT",
+      "qtyDescription": "Gross register ton"
+    },
+    {
+      "qtyCode": 40,
+      "qtyAbbr": "GT",
+      "qtyDescription": "Gross tonnage"
+    },
+    {
+      "qtyCode": 41,
+      "qtyAbbr": "ce/el",
+      "qtyDescription": "Number of cells/elements"
+    }
+  ]
+}

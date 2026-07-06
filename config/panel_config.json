@@ -1,0 +1,21 @@
+{
+  "reporter_code": "699",
+  "reporter_name": "India",
+  "years": [
+    2009,
+    2010
+  ],
+  "classification": "HS",
+  "frequency": "A",
+  "flows": [
+    "import",
+    "export"
+  ],
+  "partner_code": "all",
+  "commodity_codes": [
+    "03",
+    "07",
+    "11"
+  ],
+  "max_codes_per_batch": 20
+}

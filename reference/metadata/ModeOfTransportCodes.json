@@ -1,0 +1,76 @@
+{
+  "results": [
+    {
+      "id": "0",
+      "text": "TOTAL modes of transport"
+    },
+    {
+      "id": "1000",
+      "text": "Air"
+    },
+    {
+      "id": "2000",
+      "text": "Water"
+    },
+    {
+      "id": "2100",
+      "text": "Sea"
+    },
+    {
+      "id": "2200",
+      "text": "Inland waterway"
+    },
+    {
+      "id": "2900",
+      "text": "Water, not else classified"
+    },
+    {
+      "id": "3000",
+      "text": "Land"
+    },
+    {
+      "id": "3100",
+      "text": "Railway"
+    },
+    {
+      "id": "3200",
+      "text": "Road"
+    },
+    {
+      "id": "3900",
+      "text": "Land, not else classified"
+    },
+    {
+      "id": "9000",
+      "text": "Not elsewhere classified"
+    },
+    {
+      "id": "9100",
+      "text": "Pipelines and cables"
+    },
+    {
+      "id": "9110",
+      "text": "Pipelines"
+    },
+    {
+      "id": "9120",
+      "text": "Cables"
+    },
+    {
+      "id": "9190",
+      "text": "Pipelines and cables, not else classified"
+    },
+    {
+      "id": "9200",
+      "text": "Postal consignments, mail or courier shipment"
+    },
+    {
+      "id": "9300",
+      "text": "Self propelled goods"
+    },
+    {
+      "id": "9900",
+      "text": "Other"
+    }
+  ]
+}
