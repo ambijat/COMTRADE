@@ -10,15 +10,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #fbf7ef;
-      --panel: #fffdf8;
+      --bg: #f5efe4;
+      --panel: #fffdf9;
       --ink: #1d2329;
-      --muted: #55606b;
-      --accent-a: #0f9d89;
-      --accent-b: #f28f3b;
-      --accent-c: #e95555;
-      --line: #d6d0c3;
-      --shadow: 0 18px 50px rgba(29, 35, 41, 0.12);
+      --muted: #4b5764;
+      --accent-a: #088a79;
+      --accent-b: #ea7d2c;
+      --accent-c: #d84848;
+      --line: #d8cebf;
+      --shadow: 0 18px 50px rgba(17, 23, 30, 0.14);
       --radius: 20px;
     }
 
@@ -30,9 +30,11 @@
     body {
       margin: 0;
       padding: 0;
-      background: radial-gradient(circle at 15% 20%, #ffe8c8 0%, transparent 45%),
-        radial-gradient(circle at 88% 10%, #c9f6ee 0%, transparent 42%),
-        linear-gradient(160deg, #fbf7ef 0%, #f3ece1 100%);
+      background:
+        radial-gradient(circle at 10% 10%, rgba(255, 203, 115, 0.45) 0%, transparent 38%),
+        radial-gradient(circle at 88% 8%, rgba(123, 229, 201, 0.45) 0%, transparent 35%),
+        radial-gradient(circle at 82% 92%, rgba(255, 168, 116, 0.28) 0%, transparent 40%),
+        linear-gradient(160deg, #faf5ec 0%, #efe6d8 100%);
       color: var(--ink);
       font-family: "Space Grotesk", "Segoe UI", sans-serif;
       line-height: 1.5;
@@ -41,7 +43,7 @@
     .page {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 28px 20px 56px;
+      padding: 28px 20px 64px;
       position: relative;
       overflow: hidden;
     }
@@ -58,25 +60,106 @@
 
     .banner {
       border: 1px solid var(--line);
-      background: var(--panel);
+      background: linear-gradient(165deg, #fffdf9 0%, #fff8ed 60%, #fbf4ea 100%);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 28px;
+      padding: 30px;
       position: relative;
       overflow: hidden;
       isolation: isolate;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 22px;
+    }
+
+    .banner::before {
+      content: "";
+      position: absolute;
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(8, 138, 121, 0.2), rgba(8, 138, 121, 0));
+      bottom: -170px;
+      left: -120px;
+      z-index: -1;
     }
 
     .banner::after {
       content: "";
       position: absolute;
-      width: 260px;
-      height: 260px;
+      width: 300px;
+      height: 300px;
       border-radius: 50%;
-      background: linear-gradient(135deg, rgba(15, 157, 137, 0.18), rgba(242, 143, 59, 0.12));
-      top: -100px;
-      right: -80px;
+      background: linear-gradient(135deg, rgba(242, 143, 59, 0.22), rgba(232, 88, 72, 0.14));
+      top: -120px;
+      right: -100px;
       z-index: -1;
+    }
+
+    .hero-copy {
+      align-self: center;
+    }
+
+    .hero-visual {
+      border: 1px solid #d5c8b4;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #182735 0%, #1f5166 58%, #2a8977 100%);
+      position: relative;
+      min-height: 220px;
+      overflow: hidden;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+    }
+
+    .hero-visual::before,
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .hero-visual::before {
+      width: 250px;
+      height: 250px;
+      right: -70px;
+      top: -70px;
+      background: radial-gradient(circle, rgba(255, 197, 88, 0.46), rgba(255, 197, 88, 0));
+    }
+
+    .hero-visual::after {
+      width: 300px;
+      height: 300px;
+      left: -130px;
+      bottom: -170px;
+      background: radial-gradient(circle, rgba(96, 224, 193, 0.42), rgba(96, 224, 193, 0));
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.14) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.14) 1px, transparent 1px);
+      background-size: 30px 30px;
+      opacity: 0.35;
+    }
+
+    .hero-stats {
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .hero-stats div {
+      border: 1px solid rgba(236, 246, 255, 0.35);
+      border-radius: 10px;
+      background: rgba(3, 14, 22, 0.38);
+      color: #e7f7ff;
+      padding: 8px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.72rem;
     }
 
     .eyebrow {
@@ -137,7 +220,7 @@
     }
 
     .card {
-      background: var(--panel);
+      background: linear-gradient(160deg, #fffdf9 0%, #fff8ef 100%);
       border: 1px solid var(--line);
       border-radius: 16px;
       padding: 18px;
@@ -179,9 +262,9 @@
       font-size: 0.75rem;
       border-radius: 999px;
       padding: 5px 10px;
-      border: 1px solid #b4c4d4;
-      background: #f2f8ff;
-      color: #314a63;
+      border: 1px solid #bccde0;
+      background: linear-gradient(135deg, #f4f9ff, #eaf4ff);
+      color: #2b445b;
     }
 
     .gallery {
@@ -193,24 +276,26 @@
 
     .shot {
       grid-column: span 4;
-      background: var(--panel);
+      background: linear-gradient(160deg, #fffefb 0%, #fff8ed 100%);
       border: 1px solid var(--line);
       border-radius: 16px;
       overflow: hidden;
       box-shadow: 0 8px 24px rgba(29, 35, 41, 0.09);
-      transition: transform 220ms ease;
+      transition: transform 220ms ease, box-shadow 220ms ease;
     }
 
     .shot:hover {
       transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(22, 29, 36, 0.17);
     }
 
     .shot img {
       display: block;
       width: 100%;
-      height: 210px;
+      height: 230px;
       object-fit: cover;
-      background: linear-gradient(130deg, #ffdcb8 0%, #e5fff9 58%, #dce9ff 100%);
+      background: linear-gradient(130deg, #ffd2a3 0%, #d8fff5 58%, #d5e2ff 100%);
+      border-bottom: 1px solid #e3d8c8;
     }
 
     .shot figcaption {
@@ -230,9 +315,9 @@
 
     .pipeline {
       margin-top: 24px;
-      border: 1px dashed #b8c5d2;
+      border: 1px dashed #afbdcc;
       border-radius: 14px;
-      background: #f8fbff;
+      background: linear-gradient(155deg, #f8fbff 0%, #f2f9ff 100%);
       padding: 14px;
       display: grid;
       gap: 10px;
@@ -287,6 +372,10 @@
     }
 
     @media (max-width: 920px) {
+      .banner {
+        grid-template-columns: 1fr;
+      }
+
       .timeline,
       .features,
       .shot {
@@ -311,6 +400,10 @@
         padding: 18px;
       }
 
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+
       .pipeline {
         grid-template-columns: 1fr;
       }
@@ -326,16 +419,26 @@
     <div class="grain" aria-hidden="true"></div>
 
     <section class="banner reveal">
-      <span class="eyebrow">Refurbished 2026</span>
-      <h1>COMTRADE Panel Builder</h1>
-      <p class="subtitle">
-        A full Python-era reconstruction of the legacy COMTRADE workflow, redesigned for the current UN Comtrade API environment,
-        reproducible panel generation, and GUI-driven research operations.
-      </p>
-      <div class="meta">
-        <span>Legacy lineage retained</span>
-        <span>New architecture + data flow</span>
-        <span>Repository face page</span>
+      <div class="hero-copy">
+        <span class="eyebrow">Refurbished 2026</span>
+        <h1>COMTRADE Panel Builder</h1>
+        <p class="subtitle">
+          A full Python-era reconstruction of the legacy COMTRADE workflow, redesigned for the current UN Comtrade API environment,
+          reproducible panel generation, and GUI-driven research operations.
+        </p>
+        <div class="meta">
+          <span>Legacy lineage retained</span>
+          <span>New architecture + data flow</span>
+          <span>Repository face page</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-stats">
+          <div>Flow<br><b>raw -> processed</b></div>
+          <div>Modes<br><b>builder + GUI</b></div>
+          <div>Outcome<br><b>long + wide panel</b></div>
+        </div>
       </div>
     </section>
 
@@ -419,14 +522,31 @@
   </main>
 
   <script>
-    // Fallback labels for missing local screenshots.
-    const fallbackLabels = ["Add GUI screenshot", "Add output screenshot", "Add validation screenshot"];
+    // Fallback graphics for missing or tiny local screenshots.
+    const fallbackSources = [
+      "docs/screenshots/placeholder-gui.svg",
+      "docs/screenshots/placeholder-output.svg",
+      "docs/screenshots/placeholder-validation.svg"
+    ];
+
+    const applyFallback = (img, index) => {
+      const fallbackSrc = fallbackSources[index] || fallbackSources[0];
+      if (!img.dataset.fallbackApplied) {
+        img.src = fallbackSrc;
+        img.dataset.fallbackApplied = "true";
+      }
+    };
+
     document.querySelectorAll(".shot img").forEach((img, index) => {
       img.addEventListener("error", () => {
-        img.alt = fallbackLabels[index] || "Add screenshot";
-        img.style.objectFit = "contain";
-        img.style.padding = "24px";
+        applyFallback(img, index);
       }, { once: true });
+
+      img.addEventListener("load", () => {
+        if (img.naturalWidth <= 2 || img.naturalHeight <= 2) {
+          applyFallback(img, index);
+        }
+      });
     });
   </script>
 </body>
