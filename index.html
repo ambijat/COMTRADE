@@ -58,6 +58,59 @@
       opacity: 0.3;
     }
 
+    .poster-band {
+      position: relative;
+      margin-bottom: 16px;
+      border-radius: 16px;
+      border: 1px solid #c9baa4;
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(27, 34, 42, 0.12);
+      background: linear-gradient(100deg, #162636 0%, #1f5d74 44%, #2ea084 75%, #f0b35f 100%);
+      color: #f4fbff;
+      padding: 16px 18px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .poster-band::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -35deg,
+        rgba(255, 255, 255, 0.12) 0,
+        rgba(255, 255, 255, 0.12) 8px,
+        rgba(255, 255, 255, 0) 8px,
+        rgba(255, 255, 255, 0) 18px
+      );
+      mix-blend-mode: soft-light;
+      pointer-events: none;
+    }
+
+    .band-title,
+    .band-meta {
+      position: relative;
+      z-index: 1;
+    }
+
+    .band-title {
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .band-meta {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.8rem;
+      border: 1px solid rgba(234, 246, 255, 0.5);
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: rgba(8, 23, 34, 0.36);
+    }
+
     .banner {
       border: 1px solid var(--line);
       background: linear-gradient(165deg, #fffdf9 0%, #fff8ed 60%, #fbf4ea 100%);
@@ -267,6 +320,77 @@
       color: #2b445b;
     }
 
+    .diagonal-sep {
+      height: 12px;
+      margin: 18px 4px;
+      border-radius: 999px;
+      background: repeating-linear-gradient(
+        -45deg,
+        rgba(8, 138, 121, 0.2) 0,
+        rgba(8, 138, 121, 0.2) 12px,
+        rgba(234, 125, 44, 0.15) 12px,
+        rgba(234, 125, 44, 0.15) 24px
+      );
+      border: 1px solid #d4c8b7;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55);
+    }
+
+    .timeline-strip {
+      margin-top: 16px;
+      border: 1px solid #d1c5b2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff8e9 0%, #fffdf8 100%);
+      box-shadow: 0 8px 22px rgba(28, 35, 43, 0.08);
+      padding: 16px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .timeline-strip::after {
+      content: "";
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      top: 50%;
+      height: 2px;
+      background: linear-gradient(90deg, #1f6d85 0%, #1f6d85 35%, #d75e46 100%);
+      opacity: 0.35;
+      transform: translateY(-50%);
+      z-index: 0;
+    }
+
+    .strip-items {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .strip-item {
+      border: 1px solid #d2dbe4;
+      border-radius: 12px;
+      background: #ffffff;
+      padding: 10px;
+      min-height: 84px;
+    }
+
+    .strip-item small {
+      display: block;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6b7b8c;
+      margin-bottom: 4px;
+    }
+
+    .strip-item b {
+      font-size: 0.9rem;
+      color: #253241;
+      line-height: 1.3;
+    }
+
     .gallery {
       margin-top: 22px;
       display: grid;
@@ -382,6 +506,10 @@
         grid-column: span 12;
       }
 
+      .strip-items {
+        grid-template-columns: 1fr 1fr;
+      }
+
       .pipeline {
         grid-template-columns: 1fr 1fr;
       }
@@ -404,7 +532,15 @@
         grid-template-columns: 1fr;
       }
 
+      .poster-band {
+        grid-template-columns: 1fr;
+      }
+
       .pipeline {
+        grid-template-columns: 1fr;
+      }
+
+      .strip-items {
         grid-template-columns: 1fr;
       }
 
@@ -417,6 +553,11 @@
 <body>
   <main class="page">
     <div class="grain" aria-hidden="true"></div>
+
+    <section class="poster-band reveal">
+      <div class="band-title">COMTRADE Reconstruction Poster . Python Era . 2026</div>
+      <div class="band-meta">UN Comtrade R7 successor build</div>
+    </section>
 
     <section class="banner reveal">
       <div class="hero-copy">
@@ -468,6 +609,31 @@
         </div>
       </article>
     </section>
+
+    <div class="diagonal-sep reveal d2" aria-hidden="true"></div>
+
+    <section class="timeline-strip reveal d3" aria-label="Feature timeline">
+      <div class="strip-items">
+        <div class="strip-item">
+          <small>Stage 01</small>
+          <b>Legacy method audit and gap mapping</b>
+        </div>
+        <div class="strip-item">
+          <small>Stage 02</small>
+          <b>Python builder and metadata integration</b>
+        </div>
+        <div class="strip-item">
+          <small>Stage 03</small>
+          <b>GUI controls and config-driven execution</b>
+        </div>
+        <div class="strip-item">
+          <small>Stage 04</small>
+          <b>Validated long and wide panel outputs</b>
+        </div>
+      </div>
+    </section>
+
+    <div class="diagonal-sep reveal d3" aria-hidden="true"></div>
 
     <section class="gallery reveal d3" aria-label="Screenshots and feature panels">
       <figure class="shot">
