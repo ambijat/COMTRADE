@@ -93,3 +93,27 @@ This means newly downloaded metadata files in `reference/metadata/` are actively
 For the latest full audit of structure, implementation journey, ontology-fidelity status, and proposed roadmap, see:
 
 - `ontology/SESSION_AUDIT_AND_DIRECTION_2026-07-05.md`
+
+## Project poster page (repository face)
+A poster-style project page has been added to give this repository a visual front page:
+
+- Local file: `index.html`
+
+This page highlights:
+
+- The 2026 refurbishment narrative and project arc.
+- GUI-first workflow and newly introduced features.
+- Placeholder panels for screenshots and validation visuals.
+- A compact pipeline snapshot from acquisition to QA output.
+
+### Add your real screenshots
+Place screenshots at these paths to populate the poster gallery:
+
+- `docs/screenshots/gui-overview.png`
+- `docs/screenshots/panel-output.png`
+- `docs/screenshots/validation-report.png`
+
+### Optional GitHub Pages publication
+If GitHub Pages is enabled for this repository, this poster can serve as the public project homepage.
+
+- Suggested URL after enabling Pages: `https://ambijat.github.io/COMTRADE/`
